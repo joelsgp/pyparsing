@@ -152,7 +152,7 @@ Usage notes
     skipping of whitespace before trying to match the expression
 
   - use ``Combine`` to require that successive expressions must be
-    adjacent in the input string.  For instance, this expression::
+    adjacent in the input   For instance, this expression::
 
       real = Word(nums) + '.' + Word(nums)
 
@@ -282,7 +282,7 @@ methods for code to use are:
   matched tokens available as a list, and optionally as a dictionary,
   or as an object with named attributes; if ``parse_all`` is set to True, then
   ``parse_string`` will raise a ParseException_ if the grammar does not process
-  the complete input string.
+  the complete input 
 
 - ``parse_file(source_file)`` - a convenience function, that accepts an
   input file object or filename.  The file contents are passed as a
@@ -1002,7 +1002,7 @@ Exception classes and Troubleshooting
 
   `with_line_numbers` has several options for displaying control characters, end-of-line
   and space markers, Unicode symbols for control characters - these are documented in the
-  function's docstring.
+  function's doc
 
 - Diagnostics can be enabled using ``pyparsing.enable_diag`` and passing
   one of the following enum values defined in ``pyparsing.Diagnostics``
@@ -1299,7 +1299,7 @@ Helper parse actions
 Common string and token constants
 ---------------------------------
 
-- ``alphas`` - same as ``string.letters``
+- ``alphas`` - same as ``string.ascii_letters``
 
 - ``nums`` - same as ``string.digits``
 
@@ -1322,7 +1322,7 @@ Common string and token constants
     0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyzª
     µ·ºÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ
 
-- ``printables`` - same as ``string.printable``, minus the space (``' '``) character
+- ``printables`` - same as ``printable``, minus the space (``' '``) character
 
 - ``empty`` - a global ``Empty()``; will always match
 
